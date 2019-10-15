@@ -9,7 +9,9 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0 1rem;
     box-sizing: border-box;
     font-family: Quicksand,'Helvetica Neue', 'Helvetica', sans-serif;
-    font-weight: 400;
+    font-weight: 400;   
+    color: #333344;
+    background-color: #FCFCFF;
   }
 
   a {
@@ -19,5 +21,9 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     margin: 0 auto;
     list-style-type: none;
+  }
+
+  p {
+    line-height: 1.6;
   }
 `

@@ -15,7 +15,7 @@ import { GlobalStyle } from "../theme/globalStyle"
 
 const Container = styled.div`
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 650px;
 `
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

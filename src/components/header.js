@@ -6,7 +6,7 @@ import styled from "styled-components"
 const TopBar = styled.nav`
   margin: 0 auto;
   color: blue;
-  max-width: 800px;
+  max-width: 650px;
   font-weight: 600;
   padding: 1rem 0;
   display: flex;
