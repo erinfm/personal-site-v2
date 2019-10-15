@@ -1,8 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Erin McGrath`,
+    description: `Hi, I'm Erin McGrath! I'm a front-end developer based in Europe. Welcome to my personal site, the land of dreams`,
+    author: `Erin McGrath`,
+    social: [
+      {
+        name: "twitter",
+        url: "https://twitter.com/erinfranmc",
+      },
+      {
+        name: "github",
+        url: "https://github.com/erinfm",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-styled-components`,
