@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: #5405ff;
   }
 
   ul {
@@ -24,6 +25,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    line-height: 1.6;
+    line-height: 1.7;
   }
 `

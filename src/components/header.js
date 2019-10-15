@@ -3,6 +3,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
+import { FiSunrise } from "react-icons/fi"
+import { FiSunset } from "react-icons/fi"
+
 const TopBar = styled.nav`
   margin: 0 auto;
   color: blue;
@@ -29,11 +32,17 @@ const RightSideLinks = styled.div`
 const HomeLink = styled(props => <Link {...props} />)`
   font-size: 1.25rem;
   color: #5405ff;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 `
 
 const Title = styled.h1`
   font-size: 1.25rem;
+`
+
+const NightModeToggle = styled.div`
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
 `
 
 const Header = ({ siteTitle }) => (
@@ -46,6 +55,9 @@ const Header = ({ siteTitle }) => (
       <StyledLink to="/projects/">Projects</StyledLink>
       <StyledLink to="/blog/">Blog</StyledLink>
       <StyledLink to="/contact/">Contact</StyledLink>
+      <NightModeToggle to="/">
+        <FiSunset />
+      </NightModeToggle>
     </RightSideLinks>
   </TopBar>
 )
