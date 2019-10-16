@@ -3,60 +3,129 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-import { FiSunrise } from "react-icons/fi"
-import { FiSunset } from "react-icons/fi"
+import { MdTonality } from "react-icons/md"
 
 const TopBar = styled.nav`
-  margin: 0 auto;
-  color: blue;
-  max-width: 650px;
+  margin: 2rem auto;
+
+  color: #5100c2;
+  height: 2.5rem;
+  max-width: 640px;
+
   font-weight: 600;
-  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 0;
+
+  font-size: 0.9rem;
+
+  @media (min-width: 360px) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 414px) {
+  }
+
+  @media (min-width: 530px) {
+    font-size: 1.25rem;
+    padding: 0 1rem;
+  }
+`
+const HomeLink = styled(props => <Link {...props} />)`
+  padding: 0.5rem 0.75rem;
+  margin-right: 0rem;
+  background-color: #5100c2;
+  color: white;
+
+  @media (min-width: 360px) {
+  }
+
+  @media (min-width: 415px) {
+    margin-right: 0.25rem;
+  }
+
+  @media (min-width: 530px) {
+    padding: 0.5rem 1rem;
+    margin-right: 1;
+  }
 `
 
 const StyledLink = styled(props => <Link {...props} />)`
-  font-size: 1.25rem;
-  color: #5405ff;
-  margin-left: 1rem;
+  padding: 0.5rem 0.5rem;
+  margin-right: 0rem;
+  transition: color 0.1s ease;
+  &:hover {
+    color: red;
+  }
+
+  @media (min-width: 360px) {
+    margin-right: 0.25rem;
+  }
+
+  @media (min-width: 415px) {
+    margin-right: 0.25rem;
+  }
+
+  @media (min-width: 530px) {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+  }
+`
+
+const LeftSideLinks = styled.div`
+  display: flex;
 `
 
 const RightSideLinks = styled.div`
   flex-basis: 50%;
   display: flex;
   justify-content: space-between;
-`
-
-const HomeLink = styled(props => <Link {...props} />)`
-  font-size: 1.25rem;
-  color: #5405ff;
-  margin-right: 1.5rem;
-`
-
-const Title = styled.h1`
-  font-size: 1.25rem;
+  align-items: center;
 `
 
 const NightModeToggle = styled.div`
-  font-size: 1.5rem;
-  margin-left: 1rem;
+  font-size: 1.1rem;
+
+  padding: 0.75rem 0.75rem 0.5rem 0.5rem;
+
   cursor: pointer;
+  transition: color 0.1s ease;
+  &:hover {
+    color: red;
+  }
+
+  @media (min-width: 360px) {
+    font-size: 1.25rem;
+    padding: 0.75rem 0.75rem 0.5rem 0.5rem;
+  }
+
+  @media (min-width: 415px) {
+  }
+
+  @media (min-width: 530px) {
+    font-size: 1.75rem;
+    padding: 0.75rem 1rem 0.25rem 1rem;
+  }
 `
 
 const Header = ({ siteTitle }) => (
   <TopBar>
-    <HomeLink to="/">
-      <Title>{siteTitle} </Title>
-    </HomeLink>
-
+    <LeftSideLinks>
+      <HomeLink to="/">{siteTitle}</HomeLink>
+    </LeftSideLinks>
     <RightSideLinks>
-      <StyledLink to="/projects/">Projects</StyledLink>
-      <StyledLink to="/blog/">Blog</StyledLink>
-      <StyledLink to="/contact/">Contact</StyledLink>
+      <StyledLink to="/projects/" activeStyle={{ color: "red" }}>
+        Projects
+      </StyledLink>
+      <StyledLink to="/blog/" activeStyle={{ color: "red" }}>
+        Blog
+      </StyledLink>
+      <StyledLink to="/contact/" activeStyle={{ color: "red" }}>
+        Contact
+      </StyledLink>
       <NightModeToggle to="/">
-        <FiSunset />
+        <MdTonality />
       </NightModeToggle>
     </RightSideLinks>
   </TopBar>

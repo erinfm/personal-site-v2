@@ -9,7 +9,7 @@ import { FiMail } from "react-icons/fi"
 
 const Copyright = styled.div`
   margin: 0 auto;
-  color: blue;
+  color: #5100c2;
   max-width: 650px;
   text-align: center;
   font-weight: 600;
@@ -18,15 +18,21 @@ const Copyright = styled.div`
 
 const SocialLinks = styled.div`
   margin: 0 auto;
-  padding-top: 4rem;
-  max-width: 280px;
+  padding-top: 2rem;
+  max-width: 240px;
   display: flex;
   justify-content: space-between;
 `
 
 const StyledLink = styled(props => <Link {...props} />)`
   font-size: 1.75rem;
-  color: #5405ff;
+  color: #5100c2;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  transition: color 0.1s linear;
+
+  &:hover {
+    color: #5100c2;
+  }
 `
 
 const Footer = ({ siteAuthor }) => (

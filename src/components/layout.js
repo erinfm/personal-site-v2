@@ -15,8 +15,10 @@ import Footer from "./footer"
 import { GlobalStyle } from "../theme/globalStyle"
 
 const Container = styled.div`
-  margin: 0 auto;
-  max-width: 650px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+
+  max-width: 640px;
 `
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
