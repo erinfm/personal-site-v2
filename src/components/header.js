@@ -99,13 +99,19 @@ const Header = ({ siteTitle }) => (
       <HomeLink to="/">Personal Site</HomeLink>
     </LeftSideLinks>
     <RightSideLinks>
-      <StyledLink to="/projects/" activeStyle={{ color: "#311277" }}>
+      <StyledLink
+        to="/projects/"
+        activeStyle={{ color: "var(--textLinkHover)" }}
+      >
         Projects
       </StyledLink>
-      <StyledLink to="/blog/" activeStyle={{ color: "#311277" }}>
+      <StyledLink to="/blog/" activeStyle={{ color: "var(--textLinkHover)" }}>
         Blog
       </StyledLink>
-      <StyledLink to="/contact/" activeStyle={{ color: "#311277" }}>
+      <StyledLink
+        to="/contact/"
+        activeStyle={{ color: "var(--textLinkHover)" }}
+      >
         Contact
       </StyledLink>
       <Toggle />

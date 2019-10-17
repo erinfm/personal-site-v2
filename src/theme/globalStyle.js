@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: inherit;
   }
 
   html {
@@ -69,5 +70,17 @@ export const GlobalStyle = createGlobalStyle`
 
   p {
     line-height: 1.7;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  textarea {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
   }
 `
