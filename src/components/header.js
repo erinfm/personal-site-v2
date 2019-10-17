@@ -3,12 +3,13 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-import { MdTonality } from "react-icons/md"
+import Toggle from "./darkModeToggle"
 
 const TopBar = styled.nav`
-  margin: 1rem auto 2rem auto;
+  margin: 0 auto;
+  padding-top: 2rem;
 
-  color: #701dc9;
+  color: var(--textLink);
   height: 2.5rem;
   max-width: 620px;
 
@@ -28,54 +29,56 @@ const TopBar = styled.nav`
   }
 
   @media (min-width: 530px) {
-    margin: 2rem auto;
+    margin: 0 auto;
     font-size: 1.25rem;
-    padding: 0 1rem;
+    padding: 4rem 1rem 2rem 1rem;
   }
 `
 const HomeLink = styled(props => <Link {...props} />)`
   padding: 0.5rem 0.75rem;
-  margin-right: 0rem;
-  background-color: #701dc9;
-  color: #fefcff;
+  margin-right: 0.25rem;
+  background-color: var(--textLink);
+  color: var(--bg);
 
   transition: background-color 0.1s ease;
   &:hover {
-    background-color: #311277;
+    background-color: var(--textLinkHover);
   }
 
   @media (min-width: 360px) {
+    margin-right: 0.5rem;
   }
 
   @media (min-width: 415px) {
-    margin-right: 0.25rem;
-  }
-
-  @media (min-width: 530px) {
-    padding: 0.5rem 1rem;
-    margin-right: 1;
-  }
-`
-
-const StyledLink = styled(props => <Link {...props} />)`
-  padding: 0.5rem 0.5rem;
-  margin-right: 0rem;
-  transition: color 0.1s ease;
-  &:hover {
-    color: #311277;
-  }
-
-  @media (min-width: 360px) {
-    margin-right: 0.25rem;
-  }
-
-  @media (min-width: 415px) {
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
   }
 
   @media (min-width: 530px) {
     padding: 0.5rem 1rem;
     margin-right: 1rem;
+  }
+`
+
+const StyledLink = styled(props => <Link {...props} />)`
+  padding: 0.5rem 0.25rem;
+  color: var(--textLink)
+  margin: 0 0.25rem;
+  transition: color 0.1s ease;
+  &:hover {
+    color: var(--textLinkHover);
+  }
+
+  @media (min-width: 360px) {
+    margin: 0 0.5rem 0 0.25rem;
+  }
+
+  @media (min-width: 415px) {
+    margin: 0 0.5rem 0 0.25rem;
+  }
+
+  @media (min-width: 530px) {
+    padding: 0.5rem 0.25rem;
+    margin: 0 1.5rem 0 0.5rem;
   }
 `
 
@@ -88,31 +91,6 @@ const RightSideLinks = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
-
-const NightModeToggle = styled.div`
-  font-size: 1.1rem;
-
-  padding: 0.75rem 0.75rem 0.5rem 0.5rem;
-
-  cursor: pointer;
-  transition: color 0.1s ease;
-  &:hover {
-    color: #311277;
-  }
-
-  @media (min-width: 360px) {
-    font-size: 1.25rem;
-    padding: 0.75rem 0.75rem 0.5rem 0.5rem;
-  }
-
-  @media (min-width: 415px) {
-  }
-
-  @media (min-width: 530px) {
-    font-size: 1.75rem;
-    padding: 0.75rem 1rem 0.25rem 1rem;
-  }
 `
 
 const Header = ({ siteTitle }) => (
@@ -130,9 +108,7 @@ const Header = ({ siteTitle }) => (
       <StyledLink to="/contact/" activeStyle={{ color: "#311277" }}>
         Contact
       </StyledLink>
-      <NightModeToggle to="/">
-        <MdTonality />
-      </NightModeToggle>
+      <Toggle />
     </RightSideLinks>
   </TopBar>
 )

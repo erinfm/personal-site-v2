@@ -11,18 +11,43 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    min-height:100%;
-    border-left: 1vw solid #701DC9;
-    border-right: 1vw solid #701DC9; 
-    
+   height:100%;
+   
   }
 
   body {
+
+    
    
     font-family: Quicksand,'Helvetica Neue', 'Helvetica', sans-serif;
     font-weight: 400;   
-    color: #332244;
-    background-color: #FEFCFF;  
+    
+    
+
+    --bg: #FEFCFF;
+    --textNormal:  #332244;
+    --textTitle:  #332244;
+    --textLink: #701dc9;
+    --textLinkHover: #311277;
+    --hr: hsla(0, 0%, 0%, 0.2);
+  
+    background-color: var(--bg);
+    color: var(--textNormal);
+    border-left: 1vw solid var(--textLink);
+    border-right: 1vw solid var(--textLink); 
+    height:100%;
+    
+  }
+  
+  body.dark {
+    -webkit-font-smoothing: antialiased;
+  
+    --bg: #181030;
+    --textNormal:  #FEFCFF;
+    --textTitle: #FEFCFF;
+    --textLink: #ecdefa;
+    --textLinkHover: #FEFCFF;
+    --hr: hsla(0, 0%, 0%, 0.2);
   }
 
   h1 {
@@ -35,7 +60,6 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: #701DC9;
   }
 
   ul {

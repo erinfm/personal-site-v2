@@ -11,7 +11,7 @@ const IndexPage = () => (
     <h1>Hi, I'm Erin</h1>
     <p>
       I'm a front-end developer, currently looking for a junior developer role
-      in Europe. <span>Contact me!</span>
+      in Europe. <span>Lorem lorem, lorem lorem.</span>
     </p>
 
     <p>

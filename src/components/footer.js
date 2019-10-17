@@ -9,7 +9,7 @@ import { FiMail } from "react-icons/fi"
 
 const Copyright = styled.div`
   margin: 0 auto;
-  color: #701dc9;
+  color: var(--textLink);
   max-width: 620px;
   text-align: center;
   font-weight: 600;
@@ -29,11 +29,11 @@ const SocialLinks = styled.div`
 
 const StyledLink = styled(props => <Link {...props} />)`
   font-size: 1.5rem;
-  color: #701dc9;
+  color: var(--textLink);
   padding: 0.5rem 0.5rem 0 0.5rem;
   transition: color 0.1s ease;
   &:hover {
-    color: #311277;
+    color: var(--textLinkHover);
   }
 
   @media (min-width: 414px) {
