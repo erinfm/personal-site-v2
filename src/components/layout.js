@@ -18,7 +18,11 @@ const Container = styled.div`
   margin: 3rem auto;
   padding: 0 1rem;
 
-  max-width: 640px;
+  max-width: 620px;
+
+  @media (min-width: 530px) {
+    padding: 0 2rem;
+  }
 `
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

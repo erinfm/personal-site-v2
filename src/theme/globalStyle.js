@@ -12,8 +12,8 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     min-height:100%;
-    border-left: 1vw solid #5100c2;
-    border-right: 1vw solid #5100c2; 
+    border-left: 1vw solid #701DC9;
+    border-right: 1vw solid #701DC9; 
     
   }
 
@@ -21,8 +21,8 @@ export const GlobalStyle = createGlobalStyle`
    
     font-family: Quicksand,'Helvetica Neue', 'Helvetica', sans-serif;
     font-weight: 400;   
-    color: #333344;
-    background-color: #FCFCFF;  
+    color: #332244;
+    background-color: #FEFCFF;  
   }
 
   h1 {
@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: #5100c2;
+    color: #701DC9;
   }
 
   ul {

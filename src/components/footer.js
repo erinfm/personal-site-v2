@@ -9,29 +9,35 @@ import { FiMail } from "react-icons/fi"
 
 const Copyright = styled.div`
   margin: 0 auto;
-  color: #5100c2;
-  max-width: 650px;
+  color: #701dc9;
+  max-width: 620px;
   text-align: center;
   font-weight: 600;
-  padding: 1rem 0;
+  padding: 1rem;
 `
 
 const SocialLinks = styled.div`
   margin: 0 auto;
-  padding-top: 2rem;
-  max-width: 240px;
+  max-width: 200px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 530px) {
+    max-width: 240px;
+  }
 `
 
 const StyledLink = styled(props => <Link {...props} />)`
-  font-size: 1.75rem;
-  color: #5100c2;
+  font-size: 1.5rem;
+  color: #701dc9;
   padding: 0.5rem 0.5rem 0 0.5rem;
-  transition: color 0.1s linear;
-
+  transition: color 0.1s ease;
   &:hover {
-    color: #5100c2;
+    color: #311277;
+  }
+
+  @media (min-width: 414px) {
+    font-size: 1.75rem;
   }
 `
 
@@ -51,9 +57,10 @@ const Footer = ({ siteAuthor }) => (
     </SocialLinks>
     <Copyright>
       <p>
-        © {new Date().getFullYear()}, designed and coded by {siteAuthor} using
+        © {new Date().getFullYear()}
+        {/* , designed and coded by {siteAuthor}, using
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org">Gatsby</a> */}
       </p>
     </Copyright>
   </>

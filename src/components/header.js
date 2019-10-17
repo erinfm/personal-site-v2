@@ -6,11 +6,11 @@ import styled from "styled-components"
 import { MdTonality } from "react-icons/md"
 
 const TopBar = styled.nav`
-  margin: 2rem auto;
+  margin: 1rem auto 2rem auto;
 
-  color: #5100c2;
+  color: #701dc9;
   height: 2.5rem;
-  max-width: 640px;
+  max-width: 620px;
 
   font-weight: 600;
   display: flex;
@@ -28,6 +28,7 @@ const TopBar = styled.nav`
   }
 
   @media (min-width: 530px) {
+    margin: 2rem auto;
     font-size: 1.25rem;
     padding: 0 1rem;
   }
@@ -35,8 +36,13 @@ const TopBar = styled.nav`
 const HomeLink = styled(props => <Link {...props} />)`
   padding: 0.5rem 0.75rem;
   margin-right: 0rem;
-  background-color: #5100c2;
-  color: white;
+  background-color: #701dc9;
+  color: #fefcff;
+
+  transition: background-color 0.1s ease;
+  &:hover {
+    background-color: #311277;
+  }
 
   @media (min-width: 360px) {
   }
@@ -56,7 +62,7 @@ const StyledLink = styled(props => <Link {...props} />)`
   margin-right: 0rem;
   transition: color 0.1s ease;
   &:hover {
-    color: red;
+    color: #311277;
   }
 
   @media (min-width: 360px) {
@@ -92,7 +98,7 @@ const NightModeToggle = styled.div`
   cursor: pointer;
   transition: color 0.1s ease;
   &:hover {
-    color: red;
+    color: #311277;
   }
 
   @media (min-width: 360px) {
@@ -112,16 +118,16 @@ const NightModeToggle = styled.div`
 const Header = ({ siteTitle }) => (
   <TopBar>
     <LeftSideLinks>
-      <HomeLink to="/">{siteTitle}</HomeLink>
+      <HomeLink to="/">Personal Site</HomeLink>
     </LeftSideLinks>
     <RightSideLinks>
-      <StyledLink to="/projects/" activeStyle={{ color: "red" }}>
+      <StyledLink to="/projects/" activeStyle={{ color: "#311277" }}>
         Projects
       </StyledLink>
-      <StyledLink to="/blog/" activeStyle={{ color: "red" }}>
+      <StyledLink to="/blog/" activeStyle={{ color: "#311277" }}>
         Blog
       </StyledLink>
-      <StyledLink to="/contact/" activeStyle={{ color: "red" }}>
+      <StyledLink to="/contact/" activeStyle={{ color: "#311277" }}>
         Contact
       </StyledLink>
       <NightModeToggle to="/">
