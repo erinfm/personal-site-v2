@@ -82,5 +82,6 @@ export const GlobalStyle = createGlobalStyle`
 
   button {
     font-size: 1rem;
+    cursor: pointer;
   }
 `

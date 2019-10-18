@@ -13,7 +13,7 @@ const ContactForm = styled.form`
     margin: 0.5rem 0 1rem 0;
     background-color: #fefcff;
     color: #332244;
-    border: 2px solid var(--textLink);
+    border: 2px solid var(--textNormal);
   }
 
   textarea {
@@ -23,11 +23,11 @@ const ContactForm = styled.form`
     line-height: 1.5;
     background-color: #fefcff;
     color: #332244;
-    border: 2px solid var(--textLink);
+    border: 2px solid var(--textNormal);
   }
 
   button {
-    width: 30%;
+    width: 33%;
     height: 3rem;
 
     border: none;
@@ -35,13 +35,26 @@ const ContactForm = styled.form`
 
     color: var(--bg);
     background-color: var(--textLink);
+    transition: background-color 0.4 ease;
+
+    &:hover {
+      background-color: var(--textLinkHover);
+    }
   }
 
   input[type="reset"] {
-    width: 30%;
+    width: 33%;
     height: 3rem;
     font-weight: 600;
     margin: 0;
+    color: var(--textNormal);
+    background-color: var(--bg);
+    border: 2px solid var(--textNormal);
+    cursor: pointer;
+
+    &:hover {
+      background
+    }
   }
 
   div {
