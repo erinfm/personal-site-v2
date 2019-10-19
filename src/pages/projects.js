@@ -16,6 +16,12 @@ const ProjectsPage = props => (
     <Img fluid={props.data.imageFive.childImageSharp.fluid} />
     <Img fluid={props.data.imageSix.childImageSharp.fluid} />
     <Img fluid={props.data.imageSeven.childImageSharp.fluid} />
+    <Img fluid={props.data.imageEight.childImageSharp.fluid} />
+    <Img fluid={props.data.imageNine.childImageSharp.fluid} />
+    <Img fluid={props.data.imageTen.childImageSharp.fluid} />
+    <Img fluid={props.data.imageEleven.childImageSharp.fluid} />
+    <Img fluid={props.data.imageTwelve.childImageSharp.fluid} />
+    <Img fluid={props.data.imageThirteen.childImageSharp.fluid} />
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
@@ -67,6 +73,48 @@ export const pageQuery = graphql`
       }
     }
     imageSeven: file(relativePath: { eq: "weather-2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageEight: file(relativePath: { eq: "calculator-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageNine: file(relativePath: { eq: "lang-quiz-mobile-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageTen: file(relativePath: { eq: "lang-quiz-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageEleven: file(relativePath: { eq: "lang-quiz-2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageTwelve: file(relativePath: { eq: "todolist-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageThirteen: file(relativePath: { eq: "todolist-2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
