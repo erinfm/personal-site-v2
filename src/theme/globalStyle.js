@@ -51,6 +51,15 @@ export const GlobalStyle = createGlobalStyle`
     --hr: hsla(0, 0%, 0%, 0.2);
   }
 
+  ::selection {
+    background: var(--textLink); 
+    color: var(--bg)
+  }
+  ::-moz-selection {
+    background: var(--textLink); 
+    color: var(--bg);
+  }
+
   h1 {
     margin-bottom: 2rem;
   }
