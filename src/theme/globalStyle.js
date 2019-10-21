@@ -12,12 +12,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-   height:100%;
+   
    
   }
 
   body {
-
+   height: 100%;
     
    
     font-family: Quicksand,'Helvetica Neue', 'Helvetica', sans-serif;
@@ -64,6 +64,14 @@ export const GlobalStyle = createGlobalStyle`
     margin-bottom: 2rem;
   }
 
+  h3 {
+    margin-bottom: 1rem;
+  }
+  
+  h4{
+    margin-bottom: 0.25rem;
+  }
+
   p {
     margin-bottom: 1rem;
   }
@@ -93,4 +101,6 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     cursor: pointer;
   }
+
+
 `

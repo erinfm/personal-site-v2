@@ -1,28 +1,89 @@
 import React from "react"
-import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
+
 import SEO from "../components/seo"
 import Img from "gatsby-image"
+
+const ImageWrapper = styled.div`
+  margin-bottom: 1rem;
+`
+
+const LastImageWrapper = styled.div`
+  margin-bottom: 3rem;
+ 
+  }
+`
+
 const ProjectsPage = props => (
   <Layout>
     <SEO title="Projects" />
     <h1>My Projects</h1>
-    <p>Here are some of my projects</p>
-    <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-    <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
-    <Img fluid={props.data.imageThree.childImageSharp.fluid} />
-    <Img fluid={props.data.imageFour.childImageSharp.fluid} />
-    <Img fluid={props.data.imageFive.childImageSharp.fluid} />
-    <Img fluid={props.data.imageSix.childImageSharp.fluid} />
-    <Img fluid={props.data.imageSeven.childImageSharp.fluid} />
-    <Img fluid={props.data.imageEight.childImageSharp.fluid} />
-    <Img fluid={props.data.imageNine.childImageSharp.fluid} />
-    <Img fluid={props.data.imageTen.childImageSharp.fluid} />
-    <Img fluid={props.data.imageEleven.childImageSharp.fluid} />
-    <Img fluid={props.data.imageTwelve.childImageSharp.fluid} />
-    <Img fluid={props.data.imageThirteen.childImageSharp.fluid} />
-    <Link to="/">Go back to the homepage</Link>
+    <h3>IDS Media App</h3>
+    <h4> What</h4>
+    <p>I did a thing</p>
+    <h4>Skills</h4>
+    <p>What I learned doing the thing</p>
+    <ImageWrapper>
+      <Img fluid={props.data.ids_1.childImageSharp.fluid} />
+    </ImageWrapper>
+    <ImageWrapper>
+      <Img fluid={props.data.ids_2.childImageSharp.fluid} />
+    </ImageWrapper>
+    <ImageWrapper>
+      <Img fluid={props.data.ids_3.childImageSharp.fluid} />
+    </ImageWrapper>
+    <ImageWrapper>
+      <Img fluid={props.data.ids_4.childImageSharp.fluid} />
+    </ImageWrapper>
+    <LastImageWrapper>
+      <Img fluid={props.data.ids_5.childImageSharp.fluid} />
+    </LastImageWrapper>
+    <h3>Weather App</h3>
+    <h4> What</h4>
+    <p>I did a thing</p>
+    <h4>Skills</h4>
+    <p>What I learned doing the thing</p>
+    <ImageWrapper>
+      <Img fluid={props.data.weather_app_1.childImageSharp.fluid} />{" "}
+    </ImageWrapper>{" "}
+    <LastImageWrapper>
+      <Img fluid={props.data.weather_app_2.childImageSharp.fluid} />
+    </LastImageWrapper>
+    <h3>React Calculator</h3>
+    <h4> What</h4>
+    <p>I did a thing</p>
+    <h4>Skills</h4>
+    <p>What I learned doing the thing</p>
+    <LastImageWrapper>
+      <Img fluid={props.data.calculator_1.childImageSharp.fluid} />
+    </LastImageWrapper>
+    <h3>Language Quiz App</h3>
+    <h4> What</h4>
+    <p>I did a thing</p>
+    <h4>Skills</h4>
+    <p>What I learned doing the thing</p>
+    <ImageWrapper>
+      <Img fluid={props.data.lang_quiz_1.childImageSharp.fluid} />
+    </ImageWrapper>{" "}
+    <ImageWrapper>
+      <Img fluid={props.data.lang_quiz_2.childImageSharp.fluid} />
+    </ImageWrapper>{" "}
+    <LastImageWrapper>
+      <Img fluid={props.data.lang_quiz_3.childImageSharp.fluid} />{" "}
+    </LastImageWrapper>
+    <h3>Todo List App</h3>
+    <h4> What</h4>
+    <p>I did a thing</p>
+    <h4>Skills</h4>
+    <p>What I learned doing the thing</p>
+    <ImageWrapper>
+      <Img fluid={props.data.todolist_1.childImageSharp.fluid} />{" "}
+    </ImageWrapper>{" "}
+    <LastImageWrapper>
+      <Img fluid={props.data.todolist_2.childImageSharp.fluid} />
+    </LastImageWrapper>
   </Layout>
 )
 
@@ -30,91 +91,91 @@ export default ProjectsPage
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "ids-1.png" }) {
+    ids_1: file(relativePath: { eq: "ids-1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageTwo: file(relativePath: { eq: "ids-2.png" }) {
+    ids_2: file(relativePath: { eq: "ids-2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageThree: file(relativePath: { eq: "ids-3.png" }) {
+    ids_3: file(relativePath: { eq: "ids-3.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageFour: file(relativePath: { eq: "ids-4.png" }) {
+    ids_4: file(relativePath: { eq: "ids-4.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageFive: file(relativePath: { eq: "ids-5.png" }) {
+    ids_5: file(relativePath: { eq: "ids-5.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageSix: file(relativePath: { eq: "weather-1.png" }) {
+    weather_app_1: file(relativePath: { eq: "weather-1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageSeven: file(relativePath: { eq: "weather-2.png" }) {
+    weather_app_2: file(relativePath: { eq: "weather-2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageEight: file(relativePath: { eq: "calculator-1.png" }) {
+    calculator_1: file(relativePath: { eq: "calculator-1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageNine: file(relativePath: { eq: "lang-quiz-mobile-1.png" }) {
+    lang_quiz_1: file(relativePath: { eq: "lang-quiz-mobile-1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageTen: file(relativePath: { eq: "lang-quiz-1.png" }) {
+    lang_quiz_2: file(relativePath: { eq: "lang-quiz-1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageEleven: file(relativePath: { eq: "lang-quiz-2.png" }) {
+    lang_quiz_3: file(relativePath: { eq: "lang-quiz-2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageTwelve: file(relativePath: { eq: "todolist-1.png" }) {
+    todolist_1: file(relativePath: { eq: "todolist-1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageThirteen: file(relativePath: { eq: "todolist-2.png" }) {
+    todolist_2: file(relativePath: { eq: "todolist-2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
