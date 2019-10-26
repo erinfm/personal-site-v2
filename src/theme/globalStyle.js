@@ -12,12 +12,15 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-   
+    @media (min-width: 530px) {
+      font-size: 17px;
+    }
    
   }
 
   body {
-   height: 100%;
+    min-height: 100vh;
+    height: 100%;
     
    
     font-family: Quicksand,'Helvetica Neue', 'Helvetica', sans-serif;
@@ -34,10 +37,12 @@ export const GlobalStyle = createGlobalStyle`
   
     background-color: var(--bg);
     color: var(--textNormal);
-    border-left: 1vw solid var(--textLink);
-    border-right: 1vw solid var(--textLink); 
+    border: 1vw solid var(--textLink);
+    
     height:100%;
     
+
+   
   }
   
   body.dark {
@@ -64,16 +69,18 @@ export const GlobalStyle = createGlobalStyle`
     margin-bottom: 2rem;
   }
 
-  h3 {
+  h2 {
     margin-bottom: 1rem;
   }
   
-  h4{
-    margin-bottom: 0.25rem;
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
   }
 
   a {
@@ -81,13 +88,16 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   ul {
-    margin: 0 auto;
-    list-style-type: none;
-  }
-
-  p {
+    margin: 0 0 1rem 1rem;
+    list-style: disc outside none;
     line-height: 1.7;
   }
+
+  li {
+    margin-bottom: 0.5rem;
+  
+  }
+
 
   input {
     font-size: 1rem;
@@ -99,7 +109,18 @@ export const GlobalStyle = createGlobalStyle`
 
   button {
     font-size: 1rem;
+    font-weight: 600;
+
     cursor: pointer;
+
+    border: none;
+    
+    color: var(--bg);
+    background-color: var(--textLink);
+    transition: background-color 0.4 ease;
+
+    &:hover {
+      background-color: var(--textLinkHover);
   }
 
 

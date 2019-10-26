@@ -10,7 +10,7 @@ import { FiMail } from "react-icons/fi"
 const Copyright = styled.div`
   margin: 0 auto;
   color: var(--textLink);
-  max-width: 620px;
+  max-width: 700px;
   text-align: center;
   font-weight: 600;
   padding: 1rem;

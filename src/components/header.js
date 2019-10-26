@@ -11,7 +11,7 @@ const TopBar = styled.nav`
 
   color: var(--textLink);
   height: 2.5rem;
-  max-width: 620px;
+  max-width: 700px;
 
   font-weight: 600;
   display: flex;
@@ -96,7 +96,7 @@ const RightSideLinks = styled.div`
 const Header = ({ siteTitle }) => (
   <TopBar>
     <LeftSideLinks>
-      <HomeLink to="/">Personal Site</HomeLink>
+      <HomeLink to="/">{siteTitle}</HomeLink>
     </LeftSideLinks>
     <RightSideLinks>
       <StyledLink

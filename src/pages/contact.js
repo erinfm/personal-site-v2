@@ -29,17 +29,6 @@ const ContactForm = styled.form`
   button {
     width: 33%;
     height: 3rem;
-
-    border: none;
-    font-weight: 600;
-
-    color: var(--bg);
-    background-color: var(--textLink);
-    transition: background-color 0.4 ease;
-
-    &:hover {
-      background-color: var(--textLinkHover);
-    }
   }
 
   input[type="reset"] {
