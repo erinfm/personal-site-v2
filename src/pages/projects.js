@@ -77,7 +77,7 @@ const ProjectsPage = props => (
   <Layout>
     <SEO title="Projects" />
     <h1>My Projects</h1>
-    <ProjectTitle>IDS Media App</ProjectTitle>
+    <ProjectTitle>IDSMedia App</ProjectTitle>
     <Subtitle>Contract work with Laforja Sistemas</Subtitle>
     <ImageWrapper>
       <Img fluid={props.data.ids_1.childImageSharp.fluid} />
@@ -87,12 +87,13 @@ const ProjectsPage = props => (
     </ImageWrapper>
     <h3>What</h3>
     <p>
-      Using Javascript, I developed the Admin dashboard for a client
-      application.
+      I developed the Administration dashboard for the company's digital signage
+      platform.
     </p>
     <p>
-      I learned to use an inhouse framework/templating engine, working with a
-      REST API and HTTP requests to implement a full CRUD functionality.
+      Using JavaScript, I learned to use an inhouse framework/templating engine,
+      working with a REST API and HTTP requests to implement a full CRUD
+      functionality.
     </p>
     <p>
       The logged in user can create, edit and delete data across multiple
@@ -104,8 +105,8 @@ const ProjectsPage = props => (
     <h3>Skills</h3>
     <ul>
       <li>
-        Vanilla Javascript: DOM API, array/string manipulation, error handling,
-        working with JSON data, asynchronous Javascript, real-time search
+        Vanilla JavaScript: DOM API, array/string manipulation, error handling,
+        working with JSON data, asynchronous JavaScript, real-time search
         filtering
       </li>
       <li>REST APIs, HTTP requests, jQuery Ajax</li>
@@ -194,7 +195,7 @@ const ProjectsPage = props => (
     </LinksDiv>
     <h3> What</h3>
     <p>
-      To reinforce my vanilla Javascript skills, I made this language vocabulary
+      To reinforce my vanilla JavaScript skills, I made this language vocabulary
       quiz app. The user chooses between three different languages and topics,
       and then has one minute to answer questions.
     </p>
@@ -204,12 +205,12 @@ const ProjectsPage = props => (
     </p>
     <h3>Skills</h3>
     <ul>
-      <li>Javascript ES6: Arrow functions, template literals</li>
+      <li>JavaScript ES6: Arrow functions, template literals</li>
       <li>DOM manipulation and event listeners</li>
       <li>
-        Javascript timing events: setTimeout(), setInterval(), clearInterval()
+        JavaScript timing events: setTimeout(), setInterval(), clearInterval()
       </li>
-      <li>Javascript Math object: Math.random(), Math.floor(</li>
+      <li>JavaScript Math object: Math.random(), Math.floor(</li>
       <li>Mobile responsive design</li>
       <li>CSS animation</li>
     </ul>
@@ -250,7 +251,7 @@ const ProjectsPage = props => (
     <h3>Skills</h3>
     <ul>
       <li>HTTP requests to REST APIs using Fetch API and promises</li>
-      <li>Asynchronous Javascript with async/await syntax and callbacks</li>
+      <li>Asynchronous JavaScript with async/await syntax and callbacks</li>
       <li>Higher-order functions: Map and filter</li>
       <li>
         Mobile responsive CSS with media queries, modals, transition effects
@@ -319,12 +320,12 @@ const ProjectsPage = props => (
     <h3> What</h3>
     <p>
       Do you have a lot to do? Then try this mobile responsive todo list app! I
-      used HTML, CSS and Javascript to create a classic todo app, with the data
+      used HTML, CSS and JavaScript to create a classic todo app, with the data
       persisting through localStorage.
     </p>
     <h3>Skills</h3>
     <ul>
-      <li>Javascript Date object</li>
+      <li>JavaScript Date object</li>
       <li>localStorage</li>
       <li>Data attributes</li>
       <li>Regex</li>

@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
     
    
-    font-family: Quicksand,'Helvetica Neue', 'Helvetica', sans-serif;
+    font-family: 'Quicksand','Helvetica Neue', 'Helvetica', -apple-system, BlinkMacSystemFont,'Segoe UI', sans-serif;
     font-weight: 400;   
     
     
