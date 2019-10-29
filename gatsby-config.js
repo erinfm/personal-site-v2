@@ -40,18 +40,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Quicksand`,
-            variants: [`400`, `700`],
-          },
-          {
-            family: `Quicksand`,
-            subsets: [`latin`],
-          },
-        ],
+        fonts: [`quicksand\:400,600`],
+        display: "swap",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

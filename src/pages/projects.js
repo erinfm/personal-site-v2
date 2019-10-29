@@ -231,7 +231,7 @@ const ProjectsPage = props => (
       <li>
         JavaScript timing events: setTimeout(), setInterval(), clearInterval()
       </li>
-      <li>JavaScript Math object: Math.random(), Math.floor(</li>
+      <li>JavaScript Math object: Math.random(), Math.floor()</li>
       <li>Mobile responsive design</li>
       <li>CSS animation</li>
     </ul>
