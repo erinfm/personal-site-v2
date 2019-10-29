@@ -37,12 +37,14 @@ export const GlobalStyle = createGlobalStyle`
   
     background-color: var(--bg);
     color: var(--textNormal);
-    border: 1vw solid var(--textLink);
+
+    border: 0.3rem solid var(--textLink);
+
+    @media (min-width: 530px) {
+      border: 0.5rem solid var(--textLink);
+    }
     
     height:100%;
-    
-
-   
   }
   
   body.dark {
