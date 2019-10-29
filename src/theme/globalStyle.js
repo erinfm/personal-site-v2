@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     --textTitle:  #332244;
     --textLink: #701dc9;
     --textLinkHover: #311277;
-    --hr: hsla(0, 0%, 0%, 0.2);
+    --accent: #d6fdf8;
   
     background-color: var(--bg);
     color: var(--textNormal);
@@ -51,9 +51,10 @@ export const GlobalStyle = createGlobalStyle`
     --bg: #181030;
     --textNormal:  #FEFCFF;
     --textTitle: #FEFCFF;
-    --textLink: #ecdefa;
+    --textLink: #FEFCFF;
     --textLinkHover: #FEFCFF;
-    --hr: hsla(0, 0%, 0%, 0.2);
+    --accent: #701dc9;
+    
   }
 
   ::selection {
@@ -85,6 +86,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: var(--textLink);
   }
 
   ul {

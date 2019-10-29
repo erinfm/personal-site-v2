@@ -37,12 +37,19 @@ const TopBar = styled.nav`
 const HomeLink = styled(props => <Link {...props} />)`
   padding: 0.5rem 0.75rem;
   margin-right: 0.25rem;
-  background-color: var(--textLink);
-  color: var(--bg);
+  background-color: var(--accent);
+  color: var(--textLink);
 
-  transition: background-color 0.1s ease;
+  color: var(--bg);
+  background-color: var(--textLink);
+  border: 2.5px solid var(--textLink);
+
+  box-shadow: 0.5rem 0.5rem 0px 0px var(--accent);
+
+  transition: color 0.1s ease, background-color 0.1s ease;
   &:hover {
-    background-color: var(--textLinkHover);
+    background-color: var(--accent);
+    color: var(--textLink);
   }
 
   @media (min-width: 360px) {
@@ -64,8 +71,18 @@ const StyledLink = styled(props => <Link {...props} />)`
   color: var(--textLink)
   margin: 0 0.25rem;
   transition: color 0.1s ease;
+
+
+  background-image: linear-gradient( transparent 0%, transparent calc(50% - 0.5rem), var(--accent) calc(50% - 0.5rem), var(--accent) 100% );
+  transition: background-position 120ms ease-in-out;
+  background-size: 100% 200%;
+  background-position: 0 0;
+ 
+
   &:hover {
-    color: var(--textLinkHover);
+    
+
+background-position: 0 100%;
   }
 
   @media (min-width: 360px) {
@@ -78,7 +95,7 @@ const StyledLink = styled(props => <Link {...props} />)`
 
   @media (min-width: 530px) {
     padding: 0.5rem 0.25rem;
-    margin: 0 1.5rem 0 0.5rem;
+    margin: 0 1.25rem 0 0.4rem;
   }
 `
 
@@ -101,17 +118,14 @@ const Header = ({ siteTitle }) => (
     <RightSideLinks>
       <StyledLink
         to="/projects/"
-        activeStyle={{ color: "var(--textLinkHover)" }}
+        activeStyle={{ backgroundPosition: "0 100%" }}
       >
         Projects
       </StyledLink>
-      <StyledLink to="/blog/" activeStyle={{ color: "var(--textLinkHover)" }}>
+      <StyledLink to="/blog/" activeStyle={{ backgroundPosition: "0 100%" }}>
         Blog
       </StyledLink>
-      <StyledLink
-        to="/contact/"
-        activeStyle={{ color: "var(--textLinkHover)" }}
-      >
+      <StyledLink to="/contact/" activeStyle={{ backgroundPosition: "0 100%" }}>
         Contact
       </StyledLink>
       <Toggle />

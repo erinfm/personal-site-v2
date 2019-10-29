@@ -9,16 +9,21 @@ import { MdTonality } from "react-icons/md"
 const Toggler = styled.div`
   font-size: 1.1rem;
 
-  margin: 0.75rem 0.75rem 0.5rem 0.25rem;
+  padding-bottom: 0.25rem;
+  margin: 1rem 0.75rem 0.5rem 0.25rem;
 
-  transition: color 0.1s ease;
+  background-image: linear-gradient(to top, var(--accent) 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 120ms ease-in-out;
+
   &:hover {
-    color: var(--textLinkHover);
+    background-position: bottom;
   }
 
   @media (min-width: 360px) {
     font-size: 1.25rem;
-    margin: 0.75rem 0.75rem 0.5rem 0.25rem;
+    margin: 1rem 0.75rem 0.5rem 0.25rem;
   }
 
   @media (min-width: 415px) {
@@ -26,7 +31,10 @@ const Toggler = styled.div`
 
   @media (min-width: 530px) {
     font-size: 1.75rem;
-    margin: 0.75rem 1rem 0.25rem 0.25rem;
+    height: 2.5rem;
+    padding-top: 0.25rem;
+
+    margin: 0.75rem 1rem 0.5rem 0.1rem;
   }
 `
 const ToggleLabel = styled.label`

@@ -31,9 +31,14 @@ const StyledLink = styled(props => <Link {...props} />)`
   font-size: 1.5rem;
   color: var(--textLink);
   padding: 0.5rem 0.5rem 0 0.5rem;
-  transition: color 0.1s ease;
+
+  background-image: linear-gradient(to top, var(--accent) 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 120ms ease-in-out;
+
   &:hover {
-    color: var(--textLinkHover);
+    background-position: bottom;
   }
 
   @media (min-width: 414px) {
@@ -57,10 +62,9 @@ const Footer = ({ siteAuthor }) => (
     </SocialLinks>
     <Copyright>
       <p>
-        © {new Date().getFullYear()}
-        {/* , designed and coded by {siteAuthor}, using
+        © {new Date().getFullYear()}, designed and coded by {siteAuthor} using
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a> */}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
       </p>
     </Copyright>
   </>
