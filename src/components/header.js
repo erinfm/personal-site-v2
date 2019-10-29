@@ -74,15 +74,14 @@ const StyledLink = styled(props => <Link {...props} />)`
 
 
   background-image: linear-gradient( transparent 0%, transparent calc(50% - 0.5rem), var(--accent) calc(50% - 0.5rem), var(--accent) 100% );
+
   transition: background-position 120ms ease-in-out;
   background-size: 100% 200%;
   background-position: 0 0;
  
 
-  &:hover {
-    
-
-background-position: 0 100%;
+  &:hover {  
+    background-position: 0 100%;
   }
 
   @media (min-width: 360px) {
