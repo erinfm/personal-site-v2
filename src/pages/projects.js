@@ -80,10 +80,16 @@ const ProjectsPage = props => (
     <ProjectTitle>IDSMedia App</ProjectTitle>
     <Subtitle>Contract work with Laforja Sistemas</Subtitle>
     <ImageWrapper>
-      <Img fluid={props.data.ids_1.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.ids_1.childImageSharp.fluid}
+        alt="IDSMedia app: Users panel"
+      />
     </ImageWrapper>
     <ImageWrapper>
-      <Img fluid={props.data.ids_2.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.ids_2.childImageSharp.fluid}
+        alt="IDSMedia app: Users panel with permissions modal"
+      />
     </ImageWrapper>
     <h3>What</h3>
     <p>
@@ -120,18 +126,30 @@ const ProjectsPage = props => (
       <li>Cross-Browser Development (including IE11)</li>
     </ul>
     <ImageWrapper>
-      <Img fluid={props.data.ids_3.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.ids_3.childImageSharp.fluid}
+        alt="IDSMedia app: Displays panel"
+      />
     </ImageWrapper>
     <ImageWrapper>
-      <Img fluid={props.data.ids_4.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.ids_4.childImageSharp.fluid}
+        alt="IDSMedia app: Displays panel with search filter active"
+      />
     </ImageWrapper>
     <ImageWrapper>
-      <Img fluid={props.data.ids_5.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.ids_5.childImageSharp.fluid}
+        alt="IDSMedia app: Formats panel"
+      />
     </ImageWrapper>
     <Divider />
     <h2>React Calculator</h2>
     <ImageWrapper>
-      <Img fluid={props.data.calculator_1.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.calculator_1.childImageSharp.fluid}
+        alt="Screenshot of calculator app using React"
+      />
     </ImageWrapper>
     <LinksDiv>
       <ProjectLink
@@ -173,7 +191,10 @@ const ProjectsPage = props => (
     <Divider />
     <h2>Language Quiz App</h2>
     <ImageWrapper>
-      <Img fluid={props.data.lang_quiz_1.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.lang_quiz_1.childImageSharp.fluid}
+        alt="Screenshot of mobile version of Language Quiz app"
+      />
     </ImageWrapper>
     <LinksDiv>
       <ProjectLink
@@ -215,15 +236,24 @@ const ProjectsPage = props => (
       <li>CSS animation</li>
     </ul>
     <ImageWrapper>
-      <Img fluid={props.data.lang_quiz_2.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.lang_quiz_2.childImageSharp.fluid}
+        alt="Screenshot of desktop version of Language Quiz app: Welcome screen"
+      />
     </ImageWrapper>
     <ImageWrapper>
-      <Img fluid={props.data.lang_quiz_3.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.lang_quiz_3.childImageSharp.fluid}
+        alt="Screenshot of desktop version of Language Quiz app: Quiz screen"
+      />
     </ImageWrapper>
     <Divider />
     <h2>Weather App</h2>
     <ImageWrapper>
-      <Img fluid={props.data.weather_app_1.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.weather_app_1.childImageSharp.fluid}
+        alt="Screenshot of weather app: Welcome screen"
+      />
     </ImageWrapper>
     <SourceCodeLink
       href="https://github.com/erinfm/weather-app-new"
@@ -258,7 +288,10 @@ const ProjectsPage = props => (
       </li>
     </ul>
     <ImageWrapper>
-      <Img fluid={props.data.weather_app_2.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.weather_app_2.childImageSharp.fluid}
+        alt="Screenshot of weather app: Results screen"
+      />
     </ImageWrapper>
     <Divider />
     <h2>Portfolio Site</h2>
@@ -297,7 +330,10 @@ const ProjectsPage = props => (
     <Divider />
     <h2>Todo List App</h2>
     <ImageWrapper>
-      <Img fluid={props.data.todolist_1.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.todolist_1.childImageSharp.fluid}
+        alt="Screenshot of todo list app on desktop"
+      />
     </ImageWrapper>
     <LinksDiv>
       <ProjectLink
@@ -334,7 +370,10 @@ const ProjectsPage = props => (
       <li>CSS Grid and Flexbox</li>
     </ul>
     <ImageWrapper>
-      <Img fluid={props.data.todolist_2.childImageSharp.fluid} />
+      <Img
+        fluid={props.data.todolist_2.childImageSharp.fluid}
+        alt="Screenshot of todo list app on mobile"
+      />
     </ImageWrapper>
   </Layout>
 )
