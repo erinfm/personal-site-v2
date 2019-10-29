@@ -12,8 +12,9 @@ const Copyright = styled.div`
   color: var(--textLink);
   max-width: 700px;
   text-align: center;
+  font-size: 0.9rem;
   font-weight: 600;
-  padding: 1rem;
+  padding: 1rem 2rem;
 `
 
 const SocialLinks = styled.div`

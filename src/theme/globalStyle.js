@@ -2,8 +2,6 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
 
-  @import url('https://fonts.googleapis.com/css?family=Quicksand:400,600');
-
   * {
     padding: 0;
     margin: 0;
@@ -69,7 +67,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 530px) {
+      margin-bottom: 2rem;
+    }
   }
 
   h2 {
