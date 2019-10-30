@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const ContactForm = styled.form`
+const ContactForm = styled.div`
   font-weight: 600;
   input {
     width: 100%;
@@ -97,28 +97,35 @@ const ContactPage = () => (
       , or get in touch using the fields below:
     </p>
 
-    <ContactForm method="post" netlify-honeypot="bot-field" data-netlify="true">
-      <input type="hidden" name="bot-field" />
-      <label>
-        Name
-        <input type="text" name="name" id="name" />
-      </label>
-      <label>
-        Email
-        <input type="email" name="email" id="email" />
-      </label>
-      <label>
-        Subject
-        <input type="text" name="subject" id="subject" />
-      </label>
-      <label>
-        Message
-        <textarea name="message" id="message" rows="5" />
-      </label>
-      <div>
-        <button type="submit">Send</button>
-        <input type="reset" value="Clear" />
-      </div>
+    <ContactForm>
+      <form
+        name="contact"
+        method="POST"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
+        <input type="hidden" name="bot-field" />
+        <label>
+          Name
+          <input type="text" name="name" id="name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" />
+        </label>
+        <label>
+          Subject
+          <input type="text" name="subject" id="subject" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="5" />
+        </label>
+        <div>
+          <button type="submit">Send</button>
+          <input type="reset" value="Clear" />
+        </div>
+      </form>
     </ContactForm>
   </Layout>
 )
