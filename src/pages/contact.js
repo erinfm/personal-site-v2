@@ -86,7 +86,7 @@ const ContactPage = () => (
     <SEO title="Contact Page" />
     <h1>Contact me</h1>
     <p>
-      Let's talk! Please{" "}
+      Let's talk! Please don't hesitate to{" "}
       <StyledATag
         href="mailto:erinfranmc@gmail.com"
         target="_blank"
@@ -94,7 +94,7 @@ const ContactPage = () => (
       >
         send me an email
       </StyledATag>
-      , or get in touch using the fields below:
+      , or get in touch using the form below:
     </p>
 
     <ContactForm>
@@ -107,19 +107,19 @@ const ContactPage = () => (
         <input type="hidden" name="bot-field" />
         <label>
           Name
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" required />
         </label>
         <label>
           Email
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
         </label>
         <label>
           Subject
-          <input type="text" name="subject" id="subject" />
+          <input type="text" name="subject" id="subject" required />
         </label>
         <label>
           Message
-          <textarea name="message" id="message" rows="5" />
+          <textarea name="message" id="message" rows="5" required />
         </label>
         <div>
           <button type="submit">Send</button>
