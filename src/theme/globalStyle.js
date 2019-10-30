@@ -49,12 +49,12 @@ export const GlobalStyle = createGlobalStyle`
   body.dark {
     -webkit-font-smoothing: antialiased;
   
-    --bg: #19062D;
+    --bg: #191121;
     --textNormal:  #FEFCFF;
     --textTitle: #FEFCFF;
     --textLink: #FEFCFF;
     --textLinkHover: #FEFCFF;
-    --accent: #701dc9;
+    --accent: #7034b1;
 
     
   }
