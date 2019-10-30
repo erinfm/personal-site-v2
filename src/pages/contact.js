@@ -11,8 +11,8 @@ const ContactForm = styled.form`
     width: 100%;
     padding: 0.5rem 0.75rem;
     margin: 0.5rem 0 1rem 0;
-    background-color: #fefcff;
-    color: #332244;
+    background-color: var(--bg);
+    color: var(--textNormal);
     border: 2px solid var(--textNormal);
   }
 
@@ -21,14 +21,22 @@ const ContactForm = styled.form`
     padding: 0.5rem 0.75rem;
     margin: 0.5rem 0 1.5rem 0;
     line-height: 1.5;
-    background-color: #fefcff;
-    color: #332244;
+    background-color: var(--bg);
+    color: var(--textNormal);
     border: 2px solid var(--textNormal);
   }
 
   button {
     width: 33%;
     height: 3rem;
+    border: 2px solid var(--textLink);
+
+    transition: color 0.1s ease, background-color 0.1s ease;
+
+    &:hover {
+      background-color: var(--accent);
+      color: var(--textLink);
+    }
   }
 
   input[type="reset"] {

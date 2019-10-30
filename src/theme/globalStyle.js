@@ -32,6 +32,7 @@ export const GlobalStyle = createGlobalStyle`
     --textLink: #701dc9;
     --textLinkHover: #311277;
     --accent: #d6fdf8;
+   
   
     background-color: var(--bg);
     color: var(--textNormal);
@@ -48,12 +49,13 @@ export const GlobalStyle = createGlobalStyle`
   body.dark {
     -webkit-font-smoothing: antialiased;
   
-    --bg: #181030;
+    --bg: #19062D;
     --textNormal:  #FEFCFF;
     --textTitle: #FEFCFF;
     --textLink: #FEFCFF;
     --textLinkHover: #FEFCFF;
     --accent: #701dc9;
+
     
   }
 
