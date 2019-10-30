@@ -12,9 +12,13 @@ const Copyright = styled.div`
   color: var(--textLink);
   max-width: 700px;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
   padding: 1rem 2rem;
+
+  @media (min-width: 530px) {
+    font-size: 0.9rem;
+  }
 `
 
 const SocialLinks = styled.div`
@@ -27,8 +31,7 @@ const SocialLinks = styled.div`
     max-width: 240px;
   }
 `
-
-const StyledLink = styled(props => <Link {...props} />)`
+const StyledSocialLink = styled.a`
   font-size: 1.5rem;
   color: var(--textLink);
   padding: 0.5rem 0.5rem 0 0.5rem;
@@ -50,16 +53,27 @@ const StyledLink = styled(props => <Link {...props} />)`
 const Footer = ({ siteAuthor }) => (
   <>
     <SocialLinks>
-      <StyledLink to="/">
+      <StyledSocialLink
+        href="https://www.github.com/erinfm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FiGithub />
-      </StyledLink>
-      <StyledLink to="/">
+      </StyledSocialLink>
+      <StyledSocialLink
+        href="https://www.twitter.com/erinfranmc"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FiTwitter />
-      </StyledLink>
-      <StyledLink to="/">
-        {" "}
+      </StyledSocialLink>
+      <StyledSocialLink
+        href="mailto:erinfranmc@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FiMail />
-      </StyledLink>
+      </StyledSocialLink>
     </SocialLinks>
     <Copyright>
       <p>

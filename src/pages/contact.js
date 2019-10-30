@@ -60,11 +60,42 @@ const ContactForm = styled.form`
     width: 100%;
   }
 `
+
+const StyledATag = styled.a`
+  padding: 0.25rem 0.1rem;
+  font-weight: 600;
+
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50% - 0.5rem),
+    var(--accent) calc(50% - 0.5rem),
+    var(--accent) 100%
+  );
+
+  transition: background-position 120ms ease-in-out;
+  background-size: 100% 230%;
+  background-position: 0 0;
+
+  &:hover {
+    background-position: 0 100%;
+  }
+`
+
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact Page" />
     <h1>Contact me</h1>
-    <p>Get in touch</p>
+    <p>
+      Let's talk! Please{" "}
+      <StyledATag
+        href="mailto:erinfranmc@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        send me an email
+      </StyledATag>
+      , or get in touch using the fields below:
+    </p>
 
     <ContactForm method="post" netlify-honeypot="bot-field" data-netlify="true">
       <input type="hidden" name="bot-field" />

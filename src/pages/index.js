@@ -16,6 +16,7 @@ const StyledLink = styled(props => <Link {...props} />)`
   font-weight: 600;
   color: var(--textLink);
 `
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -35,16 +36,16 @@ const IndexPage = () => (
       </StyledLink>
     </StyledP>
     <StyledP>
-      I first discovered programming through the CS50: Introduction to Computer
-      Science course, and was immediately absorbed by the world of coding and
-      problem solving. My curiosity lead to studying Javascript, and since then
-      I've been fully immersed in all things web development.
+      I first discovered programming through the CS50 Computer Science course,
+      and was soon absorbed by the world of coding and problem solving. My
+      curiosity lead to studying JavaScript, and since then I've been fully
+      immersed in all things web development.
     </StyledP>
     <StyledSubtitle>Why me?</StyledSubtitle>
     <StyledP>
       <ul>
         <li>
-          Strong skills with HTML, CSS, Javascript and React, and very
+          Strong skills with HTML, CSS, JavaScript and React, and very
           enthusiastic to pick up new languages, libraries and frameworks as
           required.
         </li>
@@ -56,9 +57,8 @@ const IndexPage = () => (
           </span>{" "}
         </li>
         <li>
-          As a self-taught developer, I'm a proactive self-starter with the
-          motivation and drive to learn, and the ability to set goals and see
-          them through.
+          I'm a self-taught developer, with the motivation and drive to learn,
+          and the ability to set goals and see them through.
         </li>
         <li>
           I{" "}
