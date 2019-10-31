@@ -306,11 +306,11 @@ const ProjectsPage = props => (
     </SourceCodeLink>
     <h3> What</h3>
     <p>
-      As I wanted a fast-performing personal site, I decided to leverage my
-      React skills and use Gatsby, a static site generator that lets you build
-      your application with React components. I designed the site with a
-      mobile-first philosophy, first creating Adobe XD mockups, and then writing
-      the CSS from scratch using Styled Components.
+      For my personal site, I decided to leverage my React skills and use
+      Gatsby, a static site generator that lets you build your application with
+      React components. I designed the site with a mobile-first philosophy,
+      first creating Adobe XD mockups, and then writing the CSS from scratch
+      using Styled Components.
     </p>
     <p>
       It was a great oppportunity to learn more about Progressive Web Apps,
