@@ -39,6 +39,7 @@ module.exports = {
         theme_color: `#701dc9`,
         display: `minimal-ui`,
         icon: `src/images/female-technologist-favicon.png`, // This path is relative to the root of the site.
+        crossOrigin: `use-credentials`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
