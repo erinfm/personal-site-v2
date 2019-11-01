@@ -3,6 +3,7 @@ module.exports = {
     title: `Erin McGrath`,
     description: `Hi, I'm Erin McGrath! I'm a front-end developer based in Europe. Welcome to my personal site, the land of dreams`,
     author: `Erin McGrath`,
+    siteUrl: `https://www.erinmcg.com`,
     social: [
       {
         name: "twitter",
