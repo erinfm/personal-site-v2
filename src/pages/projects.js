@@ -23,7 +23,7 @@ const ProjectTitle = styled.h2`
 `
 
 const Subtitle = styled.h3`
-  margin-top: 0;
+  margin-top: 0.25rem;
   margin-bottom: 1rem;
 `
 

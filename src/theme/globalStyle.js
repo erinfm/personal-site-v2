@@ -6,13 +6,17 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     font-family: inherit;
+
+    :focus {
+      outline: 3px solid var(--focus);
+    }
+   
   }
 
   html {
     @media (min-width: 530px) {
       font-size: 17px;
     }
-   
   }
 
   body {
@@ -30,13 +34,17 @@ export const GlobalStyle = createGlobalStyle`
     --textTitle:  #332244;
     --textLink: #701dc9;
     --textLinkHover: #311277;
-    --accent: #d6fdf8;
+    --accent: #D4FCF7;
+    --focus: #83bcff;
+    // --accent: #d6fdf8;
    
   
     background-color: var(--bg);
     color: var(--textNormal);
 
     border: 0.3rem solid var(--textLink);
+
+   
 
     @media (min-width: 530px) {
       border: 0.5rem solid var(--textLink);
@@ -54,6 +62,7 @@ export const GlobalStyle = createGlobalStyle`
     --textLink: #FEFCFF;
     --textLinkHover: #FEFCFF;
     --accent: #7034b1;
+    --focus: #83bcff;
 
     
   }
@@ -126,7 +135,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: var(--textLink);
     transition: background-color 0.4 ease;
 
-    &:hover {
+    :hover {
       background-color: var(--textLinkHover);
   }
 

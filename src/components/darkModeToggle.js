@@ -17,8 +17,12 @@ const Toggler = styled.div`
   background-position: top;
   transition: background-position 120ms ease-in-out;
 
-  &:hover {
+  :hover {
     background-position: bottom;
+  }
+
+  :active {
+    outline: none;
   }
 
   @media (min-width: 360px) {
@@ -46,11 +50,19 @@ const Checkbox = styled.input`
   display: none;
 `
 
+// Allows theme toggle to work with keyboard navigation when tabbed to
+const manageKeyDown = e => {
+  const checkbox = e.target.firstChild
+  // If return key or spacebar was pressed, simulate a click on the checkbox, to change the theme
+  if (e.keyCode === 0 || e.keyCode === 32 || e.keyCode === 13) {
+    checkbox.click()
+  }
+}
 const Toggle = () => (
   <ThemeToggler>
     {({ theme, toggleTheme }) => (
       <Toggler>
-        <ToggleLabel>
+        <ToggleLabel tabIndex="0" onKeyDown={manageKeyDown}>
           <Checkbox
             type="checkbox"
             onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}

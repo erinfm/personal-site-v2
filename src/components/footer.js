@@ -41,7 +41,7 @@ const StyledSocialLink = styled.a`
   background-position: top;
   transition: background-position 120ms ease-in-out;
 
-  &:hover {
+  :hover {
     background-position: bottom;
   }
 

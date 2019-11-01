@@ -47,7 +47,8 @@ const HomeLink = styled(props => <Link {...props} />)`
   box-shadow: 0.5rem 0.5rem 0px 0px var(--accent);
 
   transition: color 0.1s ease, background-color 0.1s ease;
-  &:hover {
+
+  :hover {
     background-color: var(--accent);
     color: var(--textLink);
   }
@@ -80,9 +81,11 @@ const StyledLink = styled(props => <Link {...props} />)`
   background-position: 0 0;
  
 
-  &:hover {  
+  :hover {  
     background-position: 0 100%;
   }
+
+  
 
   @media (min-width: 360px) {
     margin: 0 0.5rem 0 0.25rem;
