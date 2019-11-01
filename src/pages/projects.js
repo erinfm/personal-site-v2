@@ -294,7 +294,13 @@ const ProjectsPage = props => (
       />
     </ImageWrapper>
     <Divider />
-    <h2>Portfolio Site</h2>
+    <h2>Personal Site</h2>
+    <ImageWrapper>
+      <Img
+        fluid={props.data.personal_site_1.childImageSharp.fluid}
+        alt="Screenshot of personal site on desktop, using dark theme: Contact page"
+      />
+    </ImageWrapper>
     <SourceCodeLink
       //TODO: Add correct portfolio site domain
       href="https://github.com/erinfm/personal-site-v2"
@@ -304,7 +310,7 @@ const ProjectsPage = props => (
       <LinkName>Source Code</LinkName>
       <FiExternalLink />
     </SourceCodeLink>
-    <h3> What</h3>
+    <h3>What</h3>
     <p>
       For my personal site, I decided to leverage my React skills and use
       Gatsby, a static site generator that lets you build your application with
@@ -324,6 +330,7 @@ const ProjectsPage = props => (
       <li>Gatsby APIs: including Gatsby Link and Gatsby Image</li>
       <li>Contact forms</li>
       <li>Dark mode</li>
+      <li>Focus on accessibility</li>
       <li>Mockup creation using Adobe XD</li>
       <li>Continuous deployment using Netlify</li>
     </ul>
@@ -459,6 +466,14 @@ export const pageQuery = graphql`
         }
       }
     }
+    personal_site_1: file(relativePath: { eq: "personal-site-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
     todolist_1: file(relativePath: { eq: "todolist-1.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
