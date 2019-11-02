@@ -137,12 +137,6 @@ const ProjectsPage = props => (
         alt="IDSMedia app: Displays panel with search filter active"
       />
     </ImageWrapper>
-    <ImageWrapper>
-      <Img
-        fluid={props.data.ids_5.childImageSharp.fluid}
-        alt="IDSMedia app: Formats panel"
-      />
-    </ImageWrapper>
     <Divider />
     <h2>React Calculator</h2>
     <ImageWrapper>
@@ -285,6 +279,7 @@ const ProjectsPage = props => (
       <li>Contact forms</li>
       <li>Dark mode</li>
       <li>Focus on accessibility</li>
+      <li>Performance optimisation</li>
       <li>Mockup creation using Adobe XD</li>
       <li>Continuous deployment using Netlify</li>
     </ul>
@@ -411,13 +406,6 @@ export const pageQuery = graphql`
       }
     }
     ids_4: file(relativePath: { eq: "ids-4.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 700) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    ids_5: file(relativePath: { eq: "ids-5.png" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
           ...GatsbyImageSharpFluid
