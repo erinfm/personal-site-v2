@@ -280,6 +280,10 @@ const ProjectsPage = props => (
       <li>Dark mode</li>
       <li>Focus on accessibility</li>
       <li>Performance optimisation</li>
+      <li>
+        Generating blog posts using Markdown files, GraphQL queries, and Gatsby
+        Node APIs
+      </li>
       <li>Mockup creation using Adobe XD</li>
       <li>Continuous deployment using Netlify</li>
     </ul>
