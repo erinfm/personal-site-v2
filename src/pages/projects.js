@@ -76,7 +76,7 @@ const LinkName = styled.span`
 const ProjectsPage = props => (
   <Layout>
     <SEO title="Projects" />
-    <h1>My Projects</h1>
+    <h1>Projects</h1>
     <ProjectTitle>IDSMedia App</ProjectTitle>
     <Subtitle>Contract work with Laforja Sistemas</Subtitle>
     <ImageWrapper>
