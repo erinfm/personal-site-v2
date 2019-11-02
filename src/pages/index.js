@@ -50,9 +50,8 @@ const IndexPage = () => (
     <div>
       <ul>
         <li>
-          Strong skills with HTML, CSS, JavaScript and React, and very
-          enthusiastic to pick up new languages, libraries and frameworks as
-          required.
+          Strong skills with HTML, CSS, JavaScript and React, and very happy to
+          pick up new languages, libraries and frameworks.
         </li>
         <li>
           Prior experience as a front-end developer, so I can hit the ground

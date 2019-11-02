@@ -11,7 +11,7 @@ const TopBar = styled.nav`
 
   color: var(--textLink);
   height: 2.5rem;
-  max-width: 700px;
+  max-width: 710px;
 
   font-weight: 600;
   display: flex;
@@ -31,7 +31,7 @@ const TopBar = styled.nav`
   @media (min-width: 530px) {
     margin: 0 auto;
     font-size: 1.25rem;
-    padding: 4rem 1rem 2rem 1rem;
+    padding: 3.5rem 1rem 1.5rem 1rem;
   }
 `
 const HomeLink = styled(props => <Link {...props} />)`

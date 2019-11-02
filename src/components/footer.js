@@ -10,7 +10,7 @@ import { FiMail } from "react-icons/fi"
 const Copyright = styled.div`
   margin: 0 auto;
   color: var(--textLink);
-  max-width: 700px;
+  max-width: 710px;
   text-align: center;
   font-size: 0.8rem;
   font-weight: 600;
@@ -29,7 +29,7 @@ const SocialLinks = styled.div`
 
   @media (min-width: 530px) {
     max-width: 240px;
-    margin: 4rem auto 0 auto;
+    margin: 2rem auto 0 auto;
   }
 `
 const StyledSocialLink = styled.a`

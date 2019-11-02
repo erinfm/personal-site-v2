@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     @media (min-width: 530px) {
-      font-size: 17px;
+      font-size: 18.5px;
     }
   }
 
@@ -80,7 +80,7 @@ export const GlobalStyle = createGlobalStyle`
     margin-bottom: 1rem;
 
     @media (min-width: 530px) {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
   }
 

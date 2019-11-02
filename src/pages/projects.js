@@ -390,77 +390,77 @@ export const pageQuery = graphql`
   query {
     ids_1: file(relativePath: { eq: "ids-1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     ids_2: file(relativePath: { eq: "ids-2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     ids_3: file(relativePath: { eq: "ids-3.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     ids_4: file(relativePath: { eq: "ids-4.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     weather_app_1: file(relativePath: { eq: "weather-1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     weather_app_2: file(relativePath: { eq: "weather-2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     calculator_1: file(relativePath: { eq: "calculator-1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     lang_quiz_1: file(relativePath: { eq: "lang-quiz-mobile-1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     lang_quiz_2: file(relativePath: { eq: "lang-quiz-1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     lang_quiz_3: file(relativePath: { eq: "lang-quiz-2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     personal_site_1: file(relativePath: { eq: "personal-site-1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -468,14 +468,14 @@ export const pageQuery = graphql`
 
     todolist_1: file(relativePath: { eq: "todolist-1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     todolist_2: file(relativePath: { eq: "todolist-2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 710) {
           ...GatsbyImageSharpFluid
         }
       }
