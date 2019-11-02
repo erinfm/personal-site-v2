@@ -248,6 +248,47 @@ const ProjectsPage = props => (
       />
     </ImageWrapper>
     <Divider />
+    <h2>Personal Site</h2>
+    <ImageWrapper>
+      <Img
+        fluid={props.data.personal_site_1.childImageSharp.fluid}
+        alt="Screenshot of personal site on desktop, using dark theme: Contact page"
+      />
+    </ImageWrapper>
+    <SourceCodeLink
+      //TODO: Add correct portfolio site domain
+      href="https://github.com/erinfm/personal-site-v2"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <LinkName>Source Code</LinkName>
+      <FiExternalLink />
+    </SourceCodeLink>
+    <h3>What</h3>
+    <p>
+      For my personal site, I decided to leverage my React skills and use
+      Gatsby, a static site generator that lets you build your application with
+      React components. I designed the site with a mobile-first philosophy,
+      first creating Adobe XD mockups, and then writing the CSS from scratch
+      using Styled Components.
+    </p>
+    <p>
+      It was a great oppportunity to learn more about Progressive Web Apps,
+      including manifest files and service workers. I also learned how to use
+      the GraphQL query language to access my data.
+    </p>
+    <h3>Skills</h3>
+    <ul>
+      <li>CSS-in-JS: Styled Components</li>
+      <li>GraphQL</li>
+      <li>Gatsby APIs: including Gatsby Link and Gatsby Image</li>
+      <li>Contact forms</li>
+      <li>Dark mode</li>
+      <li>Focus on accessibility</li>
+      <li>Mockup creation using Adobe XD</li>
+      <li>Continuous deployment using Netlify</li>
+    </ul>
+    <Divider />
     <h2>Weather App</h2>
     <ImageWrapper>
       <Img
@@ -293,47 +334,6 @@ const ProjectsPage = props => (
         alt="Screenshot of weather app: Results screen"
       />
     </ImageWrapper>
-    <Divider />
-    <h2>Personal Site</h2>
-    <ImageWrapper>
-      <Img
-        fluid={props.data.personal_site_1.childImageSharp.fluid}
-        alt="Screenshot of personal site on desktop, using dark theme: Contact page"
-      />
-    </ImageWrapper>
-    <SourceCodeLink
-      //TODO: Add correct portfolio site domain
-      href="https://github.com/erinfm/personal-site-v2"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <LinkName>Source Code</LinkName>
-      <FiExternalLink />
-    </SourceCodeLink>
-    <h3>What</h3>
-    <p>
-      For my personal site, I decided to leverage my React skills and use
-      Gatsby, a static site generator that lets you build your application with
-      React components. I designed the site with a mobile-first philosophy,
-      first creating Adobe XD mockups, and then writing the CSS from scratch
-      using Styled Components.
-    </p>
-    <p>
-      It was a great oppportunity to learn more about Progressive Web Apps,
-      including manifest files and service workers. I also learned how to use
-      the GraphQL query language to access my data.
-    </p>
-    <h3>Skills</h3>
-    <ul>
-      <li>CSS-in-JS: Styled Components</li>
-      <li>GraphQL</li>
-      <li>Gatsby APIs: including Gatsby Link and Gatsby Image</li>
-      <li>Contact forms</li>
-      <li>Dark mode</li>
-      <li>Focus on accessibility</li>
-      <li>Mockup creation using Adobe XD</li>
-      <li>Continuous deployment using Netlify</li>
-    </ul>
     <Divider />
     <h2>Todo List App</h2>
     <ImageWrapper>
