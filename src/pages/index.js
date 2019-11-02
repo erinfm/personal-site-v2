@@ -47,7 +47,7 @@ const IndexPage = () => (
       been fully immersed in all things web development.
     </StyledP>
     <StyledSubtitle>Why me?</StyledSubtitle>
-    <StyledP>
+    <div>
       <ul>
         <li>
           Strong skills with HTML, CSS, JavaScript and React, and very
@@ -80,7 +80,7 @@ const IndexPage = () => (
           </span>{" "}
         </li>
       </ul>
-    </StyledP>
+    </div>
   </Layout>
 )
 

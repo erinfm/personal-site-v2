@@ -22,13 +22,14 @@ const Copyright = styled.div`
 `
 
 const SocialLinks = styled.div`
-  margin: 0 auto;
+  margin: 1rem auto 0 auto;
   max-width: 200px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: 530px) {
     max-width: 240px;
+    margin: 4rem auto 0 auto;
   }
 `
 const StyledSocialLink = styled.a`
