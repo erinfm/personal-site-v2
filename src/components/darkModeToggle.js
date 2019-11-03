@@ -39,7 +39,7 @@ const Toggler = styled.div`
     height: 2.5rem;
     padding-top: 0.25rem;
 
-    margin: 0.75rem 1rem 0.5rem 0.1rem;
+    margin: 0.75rem 1.5rem 0.5rem 0.1rem;
   }
 `
 const ToggleLabel = styled.label`

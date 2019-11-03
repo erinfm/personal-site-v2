@@ -98,6 +98,10 @@ const StyledLink = styled(props => <Link {...props} />)`
 
   @media (min-width: 600px) {
     padding: 0.5rem 0.25rem;
+    margin: 0 1.1rem 0 0.4rem;
+  }
+
+  @media (min-width: 615px) {
     margin: 0 1.25rem 0 0.4rem;
   }
 `
