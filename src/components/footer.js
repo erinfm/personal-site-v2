@@ -16,7 +16,7 @@ const Copyright = styled.div`
   font-weight: 600;
   padding: 1rem 2rem;
 
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     font-size: 0.9rem;
   }
 `
@@ -27,7 +27,7 @@ const SocialLinks = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     max-width: 240px;
     margin: 2rem auto 0 auto;
   }

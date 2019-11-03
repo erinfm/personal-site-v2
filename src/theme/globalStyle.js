@@ -14,7 +14,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    @media (min-width: 530px) {
+    @media (min-width: 414px) {
+      font-size: 16.75px;
+    }
+
+    @media (min-width: 600px) {
       font-size: 18.5px;
     }
   }
@@ -46,7 +50,7 @@ export const GlobalStyle = createGlobalStyle`
 
    
 
-    @media (min-width: 530px) {
+    @media (min-width: 600px) {
       border: 0.5rem solid var(--textLink);
     }
     
@@ -79,7 +83,7 @@ export const GlobalStyle = createGlobalStyle`
   h1 {
     margin-bottom: 1rem;
 
-    @media (min-width: 530px) {
+    @media (min-width: 600px) {
       margin-bottom: 1.5rem;
     }
   }

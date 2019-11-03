@@ -17,11 +17,11 @@ import { GlobalStyle } from "../theme/globalStyle"
 const Container = styled.div`
   margin: 3rem auto;
   padding: 0 1rem;
+  max-width: 520px;
 
-  max-width: 710px;
-
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     padding: 0 2rem;
+    max-width: 710px;
   }
 `
 const Layout = ({ children }) => {

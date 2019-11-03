@@ -6,6 +6,10 @@ import SEO from "../components/seo"
 
 const ContactForm = styled.div`
   font-weight: 600;
+
+  padding-top: 1rem;
+
+
   input {
     width: 100%;
     padding: 0.5rem 0.75rem;

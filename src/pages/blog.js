@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 const BlogPosts = styled.div`
   font-size: 1.25rem;
 
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     font-size: 1.5rem;
   }
 `

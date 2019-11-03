@@ -30,10 +30,11 @@ const Toggler = styled.div`
     margin: 1rem 0.75rem 0.5rem 0.25rem;
   }
 
-  @media (min-width: 415px) {
+  @media (min-width: 414px) {
+    margin-right: 1rem;
   }
 
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     font-size: 1.75rem;
     height: 2.5rem;
     padding-top: 0.25rem;

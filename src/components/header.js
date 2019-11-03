@@ -8,10 +8,10 @@ import Toggle from "./darkModeToggle"
 const TopBar = styled.nav`
   margin: 0 auto;
   padding-top: 2rem;
+  max-width: 520px;
 
   color: var(--textLink);
   height: 2.5rem;
-  max-width: 710px;
 
   font-weight: 600;
   display: flex;
@@ -28,10 +28,11 @@ const TopBar = styled.nav`
   @media (min-width: 414px) {
   }
 
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     margin: 0 auto;
     font-size: 1.25rem;
     padding: 3.5rem 1rem 1.5rem 1rem;
+    max-width: 710px;
   }
 `
 const HomeLink = styled(props => <Link {...props} />)`
@@ -57,11 +58,11 @@ const HomeLink = styled(props => <Link {...props} />)`
     margin-right: 0.5rem;
   }
 
-  @media (min-width: 415px) {
-    margin-right: 0.5rem;
+  @media (min-width: 414px) {
+    margin-right: 0.75rem;
   }
 
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     padding: 0.5rem 1rem;
     margin-right: 1rem;
   }
@@ -88,14 +89,14 @@ const StyledLink = styled(props => <Link {...props} />)`
   
 
   @media (min-width: 360px) {
-    margin: 0 0.5rem 0 0.25rem;
+    margin: 0 0.4rem 0 0.25rem;
   }
 
-  @media (min-width: 415px) {
-    margin: 0 0.5rem 0 0.25rem;
+  @media (min-width: 414px) {
+    margin: 0 0.75rem 0 0.25rem;
   }
 
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     padding: 0.5rem 0.25rem;
     margin: 0 1.25rem 0 0.4rem;
   }
@@ -106,10 +107,14 @@ const LeftSideLinks = styled.div`
 `
 
 const RightSideLinks = styled.div`
-  flex-basis: 50%;
+  flex-basis: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 360px) {
+    flex-basis: 50%;
+  }
 `
 
 const Header = ({ siteTitle }) => (

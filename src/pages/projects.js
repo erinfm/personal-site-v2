@@ -31,13 +31,13 @@ const LinksDiv = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     justify-content: flex-start;
   }
 `
 const ProjectLink = styled.a`
   display: inline-block;
-  padding: 0.6rem 1.75rem;
+  padding: 0.6rem 1.7rem;
 
   font-size: 1rem;
   font-weight: 600;
@@ -54,17 +54,17 @@ const ProjectLink = styled.a`
     background-color: var(--textLinkHover);
   }
 
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     padding: 0.75rem 2.2rem;
     margin-right: 2rem;
   }
 `
 
 const SourceCodeLink = styled(ProjectLink)`
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 0.9rem;
   margin-right: 0;
 
-  @media (min-width: 530px) {
+  @media (min-width: 600px) {
     padding: 0.75rem 1.45rem;
   }
 `
