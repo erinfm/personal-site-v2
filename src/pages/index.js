@@ -27,8 +27,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>Hi, I'm Erin</h1>
     <StyledP>
-      I'm a front-end developer, currently looking for a developer role in
-      Europe.{" "}
+      I'm a front-end developer, currently looking for a new role in Europe.{" "}
       <StyledLink to="/contact/">
         {" "}
         <span role="img" aria-label="sparkles">
@@ -41,14 +40,14 @@ const IndexPage = () => (
       </StyledLink>
     </StyledP>
     <StyledP>
-      My introduction to programming was through the CS50 Computer Science
-      course, which ignited my love of coding and problem solving. Curiosity to
-      learn more led to studying JavaScript, and since then I've been fully
-      immersed in all things web development.
+      I discovered programming through the CS50 Computer Science course, which
+      ignited my love of coding and problem solving. Curiosity to learn more led
+      to studying JavaScript, and since then I've been fully immersed in all
+      things web development.
     </StyledP>
     <StyledP>
-      Now I'm excited to contribute my knowledge, motivation and enthusiasm to a
-      role where I can add value and grow as part of a team.
+      Now I hope to contribute my knowledge, motivation and enthusiasm to a role
+      where I can add value and grow as part of a team.
     </StyledP>
     <StyledSubtitle>Why me?</StyledSubtitle>
     <div>
