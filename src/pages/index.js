@@ -72,8 +72,8 @@ const IndexPage = () => (
           CSS, and have a strong interest in UI and UX design.
         </li>
         <li>
-          Ready and keen to relocate within Europe (I speak English, French and
-          Spanish at a professional level).{" "}
+          Ready and keen to relocate (I speak English, French and Spanish at a
+          professional level).{" "}
           <span role="img" aria-label="luggage">
             🧳
           </span>{" "}
