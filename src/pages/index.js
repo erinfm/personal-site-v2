@@ -41,9 +41,9 @@ const IndexPage = () => (
     </StyledP>
     <StyledP>
       I discovered programming through the CS50 Computer Science course, which
-      ignited my love of coding and problem solving. Curiosity to learn more led
-      to studying JavaScript, and since then I've been fully immersed in all
-      things web development.
+      sparked my love of coding and problem solving. Curiosity led to studying
+      Javascript, and since then I've been fully immersed in all things web
+      development.
     </StyledP>
     <StyledP>
       Now I hope to contribute my knowledge, motivation and enthusiasm to a role
@@ -53,8 +53,8 @@ const IndexPage = () => (
     <div>
       <ul>
         <li>
-          Strong skills with HTML, CSS, JavaScript and React, and happy to pick
-          up new languages, libraries and frameworks.
+          Skilled with HTML, CSS, JavaScript and React, and happy to pick up new
+          languages, libraries and frameworks.
         </li>
         <li>
           Prior experience as a front-end developer, so I can hit the ground
@@ -63,10 +63,7 @@ const IndexPage = () => (
             🚀
           </span>{" "}
         </li>
-        <li>
-          I'm self-taught, with the motivation and drive to learn, and the
-          ability to set goals and see them through.
-        </li>
+        <li>I'm self-taught, with the motivation and drive to learn more.</li>
         <li>
           I{" "}
           <span role="img" aria-label="purple heart">

@@ -86,7 +86,7 @@ const StyledATag = styled.a`
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Contact" />
+    <SEO title="Contact me" />
     <h1>Contact me</h1>
     <p>
       Let's talk! Please don't hesitate to{" "}
