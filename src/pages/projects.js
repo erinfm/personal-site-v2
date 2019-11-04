@@ -93,8 +93,8 @@ const ProjectsPage = props => (
     </ImageWrapper>
     <h3>What</h3>
     <p>
-      I developed the Administration dashboard for the company's digital signage
-      platform.
+      In this remote position, I developed the Administration dashboard for the
+      company's digital signage platform.
     </p>
     <p>
       Using JavaScript, I learned to use an inhouse framework/templating engine,
