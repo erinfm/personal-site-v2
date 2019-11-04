@@ -34,17 +34,21 @@ const IndexPage = () => (
         <span role="img" aria-label="sparkles">
           ✨
         </span>{" "}
-        HIRE ME!{" "}
+        CONTACT ME!{" "}
         <span role="img" aria-label="sparkles">
           ✨
         </span>{" "}
       </StyledLink>
     </StyledP>
     <StyledP>
-      My first introduction to programming was through the CS50 Computer Science
-      course, and I was soon absorbed by the world of coding and problem
-      solving. My curiosity lead to studying JavaScript, and since then I've
-      been fully immersed in all things web development.
+      My introduction to programming was through the CS50 Computer Science
+      course, which ignited my love of coding and problem solving. Curiosity to
+      learn more led to studying JavaScript, and since then I've been fully
+      immersed in all things web development.
+    </StyledP>
+    <StyledP>
+      Now I'm excited to contribute my knowledge, motivation and enthusiasm to a
+      role where I can add value and grow as part of a team.
     </StyledP>
     <StyledSubtitle>Why me?</StyledSubtitle>
     <div>
