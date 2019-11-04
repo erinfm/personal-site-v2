@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Erin McGrath`,
-    description: `Hi, I'm Erin McGrath! I'm a front-end developer based in Europe. Welcome to my personal site, the land of dreams`,
+    description: `Hi, I'm Erin! I'm a front-end developer. Welcome to my personal site!`,
     author: `Erin McGrath`,
     siteUrl: `https://www.erinmcg.com`,
     social: [
