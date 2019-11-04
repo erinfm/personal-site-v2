@@ -42,7 +42,7 @@ const IndexPage = () => (
     <StyledP>
       I discovered programming through the CS50 Computer Science course, which
       sparked my love of coding and problem solving. Curiosity led to studying
-      Javascript, and since then I've been fully immersed in all things web
+      JavaScript, and since then I've been fully immersed in all things web
       development.
     </StyledP>
     <StyledP>
