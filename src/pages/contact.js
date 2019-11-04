@@ -102,12 +102,13 @@ const ContactPage = () => (
 
     <ContactForm>
       <form
-        name="contact"
+        name="contact-form"
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify="true"
       >
         <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact-form" />
         <label>
           Name
           <input type="text" name="name" id="name" required />
