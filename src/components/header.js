@@ -39,7 +39,6 @@ const HomeLink = styled(props => <Link {...props} />)`
   padding: 0.5rem 0.75rem;
   margin-right: 0.25rem;
   background-color: var(--accent);
-  color: var(--textLink);
 
   color: var(--bg);
   background-color: var(--textLink);

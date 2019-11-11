@@ -48,10 +48,13 @@ const ProjectLink = styled.a`
 
   color: var(--bg);
   background-color: var(--textLink);
-  transition: background-color 0.4 ease;
+  border: 2.75px solid var(--textLink);
 
-  &:hover {
-    background-color: var(--textLinkHover);
+  transition: color 0.1s ease, background-color 0.1s ease;
+
+  :hover {
+    background-color: var(--accent);
+    color: var(--textLink);
   }
 
   @media (min-width: 600px) {
