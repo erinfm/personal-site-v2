@@ -14,7 +14,7 @@ const StyledSubtitle = styled.h3``
 const StyledLink = styled(props => <Link {...props} />)`
   font-weight: 600;
   color: var(--textLink);
-  display: inline-block;
+  display: block;
   transition: background-color 0.1s ease;
 
   :hover {
@@ -25,61 +25,31 @@ const StyledLink = styled(props => <Link {...props} />)`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi, I'm Erin</h1>
+    <h1>
+      Hi, I'm Erin{" "}
+      <span role="img" aria-label="sparkles">
+        ✨
+      </span>
+    </h1>
     <StyledP>
-      I'm a front-end developer, currently looking for a new role in Europe.{" "}
-      <StyledLink to="/contact/">
-        {" "}
-        <span role="img" aria-label="sparkles">
-          ✨
-        </span>{" "}
-        CONTACT ME!{" "}
-        <span role="img" aria-label="sparkles">
-          ✨
-        </span>{" "}
-      </StyledLink>
+      I'm a front-end developer, currently based in Ireland. I love all things
+      computers, and especially building stuff for the web.
+      <StyledLink to="/contact/"> </StyledLink>
     </StyledP>
     <StyledP>
-      I discovered programming through the CS50 Computer Science course, which
-      sparked my love of coding and problem solving. Curiosity led to studying
-      JavaScript, and since then I've been fully immersed in all things web
-      development.
+      When I'm not coding you can find me out hiking{" "}
+      <span role="img" aria-label="landscape">
+        🏞️
+      </span>
+      , learning (human) languages{" "}
+      <span role="img" aria-label="book">
+        📘
+      </span>
+      , and embracing my inner masterchef.{" "}
+      <span role="img" aria-label="cupcake">
+        👩🏻‍🍳
+      </span>
     </StyledP>
-    <StyledP>
-      Now I hope to contribute my knowledge, motivation and enthusiasm to a role
-      where I can add value and grow as part of a team.
-    </StyledP>
-    <StyledSubtitle>Why me?</StyledSubtitle>
-    <div>
-      <ul>
-        <li>
-          Skilled with HTML, CSS, JavaScript and React, and happy to pick up new
-          languages, libraries and frameworks.
-        </li>
-        <li>
-          Prior experience as a front-end developer, so I can hit the ground
-          running in a new position.{" "}
-          <span role="img" aria-label="rocket">
-            🚀
-          </span>{" "}
-        </li>
-        <li>I'm self-taught, with the motivation and drive to learn more.</li>
-        <li>
-          I{" "}
-          <span role="img" aria-label="purple heart">
-            💜
-          </span>{" "}
-          CSS, and have a strong interest in UI and UX design.
-        </li>
-        <li>
-          Ready and keen to relocate (I speak English, French and Spanish at a
-          professional level).{" "}
-          <span role="img" aria-label="luggage">
-            🧳
-          </span>{" "}
-        </li>
-      </ul>
-    </div>
   </Layout>
 )
 

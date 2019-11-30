@@ -11,12 +11,12 @@ const Copyright = styled.div`
   color: var(--textLink);
   max-width: 710px;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   padding: 1rem 2rem;
 
   @media (min-width: 600px) {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 `
 
