@@ -30,8 +30,8 @@ const IndexPage = () => (
       </span>
     </h1>
     <StyledP>
-      I'm front-end developer. I love all things computers, especially building
-      stuff for the web.
+      I'm a front-end developer. I love all things computers, especially
+      building stuff for the web.
       <StyledLink to="/contact/"> </StyledLink>
     </StyledP>
     <StyledP>
