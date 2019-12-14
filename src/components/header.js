@@ -110,13 +110,13 @@ const LeftSideLinks = styled.div`
 `
 
 const RightSideLinks = styled.div`
-  flex-basis: 60%;
+  flex-basis: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: 360px) {
-    flex-basis: 50%;
+    flex-basis: 48%;
   }
 `
 
@@ -126,12 +126,12 @@ const Header = ({ siteTitle }) => (
       <HomeLink to="/">{siteTitle}</HomeLink>
     </LeftSideLinks>
     <RightSideLinks>
-      <StyledLink
+      {/* <StyledLink
         to="/projects/"
         activeStyle={{ backgroundPosition: "0 100%" }}
       >
         Projects
-      </StyledLink>
+      </StyledLink> */}
       <StyledLink to="/blog/" activeStyle={{ backgroundPosition: "0 100%" }}>
         Blog
       </StyledLink>

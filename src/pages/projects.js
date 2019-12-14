@@ -81,7 +81,7 @@ const ProjectsPage = props => (
     <SEO title="Projects" />
     <h1>Projects</h1>
     <ProjectTitle>IDSMedia App</ProjectTitle>
-    <Subtitle>Contract work with Laforja Sistemas</Subtitle>
+    <Subtitle>(with Laforja Sistemas)</Subtitle>
     <ImageWrapper>
       <Img
         fluid={props.data.ids_1.childImageSharp.fluid}
@@ -96,11 +96,11 @@ const ProjectsPage = props => (
     </ImageWrapper>
     <h3>What</h3>
     <p>
-      In this remote position, I developed the Administration dashboard for the
-      company's digital signage platform.
+      I developed the Administration dashboard for the company's digital signage
+      platform.
     </p>
     <p>
-      Using JavaScript, I learned to use an inhouse framework/templating engine,
+      Using JavaScript, I learned to use a custom framework/templating engine,
       working with a REST API and HTTP requests to implement a full CRUD
       functionality.
     </p>
