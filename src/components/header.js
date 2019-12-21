@@ -126,12 +126,6 @@ const Header = ({ siteTitle }) => (
       <HomeLink to="/">{siteTitle}</HomeLink>
     </LeftSideLinks>
     <RightSideLinks>
-      {/* <StyledLink
-        to="/projects/"
-        activeStyle={{ backgroundPosition: "0 100%" }}
-      >
-        Projects
-      </StyledLink> */}
       <StyledLink to="/blog/" activeStyle={{ backgroundPosition: "0 100%" }}>
         Blog
       </StyledLink>
